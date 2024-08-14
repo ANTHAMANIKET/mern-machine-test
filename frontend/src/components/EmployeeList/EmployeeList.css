@@ -1,0 +1,174 @@
+
+
+.employee-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.employee-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee-list-table th, 
+.employee-list-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-list-table th {
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+}
+
+.employee-list-table td {
+    vertical-align: middle;
+}
+
+.employee-list-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.employee-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.email-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.action-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.search-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-btn {
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-btn:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .employee-list-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .employee-list-table th, 
+    .employee-list-table td {
+        padding: 8px;
+    }
+
+    .employee-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search-input {
+        padding: 6px;
+    }
+
+    .pagination {
+        flex-direction: column;
+    }
+
+    .page-btn {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .employee-list-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .employee-list-table th, 
+    .employee-list-table td {
+        padding: 6px;
+    }
+
+    .employee-image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .search-input {
+        padding: 5px;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-btn {
+        padding: 6px 10px;
+        margin: 3px 0;
+    }
+}
